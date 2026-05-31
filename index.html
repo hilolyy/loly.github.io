@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOLYFORSCHOOL - متجر الأدوات المدرسية</title>
+    <title>LOLYFORSCHOOL - الكود جاهز للنسخ</title>
     <style>
         * {
             margin: 0;
@@ -13,105 +13,44 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             padding: 20px;
         }
 
-        header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-            border-radius: 15px;
-            margin-bottom: 40px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        header h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        header p {
-            font-size: 1.2em;
-            opacity: 0.95;
-        }
-
         .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .products {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-            margin-bottom: 50px;
-        }
-
-        .product-card {
-            background: white;
-            border-radius: 12px;
-            padding: 25px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s, box-shadow 0.3s;
-            border-top: 4px solid #2a5298;
-        }
-
-        .product-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-        }
-
-        .product-card .icon {
-            font-size: 3em;
-            margin-bottom: 15px;
-        }
-
-        .product-card h3 {
-            color: #1e3c72;
-            margin-bottom: 10px;
-            font-size: 1.3em;
-        }
-
-        .product-card p {
-            color: #666;
-            font-size: 0.95em;
-        }
-
-        .code-section {
             background: white;
             border-radius: 15px;
-            padding: 40px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            margin-top: 60px;
+            padding: 50px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            width: 100%;
         }
 
-        .code-section h2 {
+        h1 {
             color: #1e3c72;
-            margin-bottom: 25px;
-            font-size: 1.8em;
             text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
         }
 
         .code-container {
             background: #f8f9fa;
-            border: 2px solid #2a5298;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 20px;
-            position: relative;
+            border: 3px solid #2a5298;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
             overflow-x: auto;
         }
 
         .code-container code {
             font-family: 'Courier New', monospace;
             color: #1e3c72;
-            font-size: 0.95em;
-            line-height: 1.6;
+            font-size: 1em;
+            line-height: 1.8;
             display: block;
             white-space: pre-wrap;
             word-wrap: break-word;
@@ -121,109 +60,58 @@
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             color: white;
             border: none;
-            padding: 12px 25px;
+            padding: 15px 40px;
             border-radius: 8px;
             cursor: pointer;
-            font-size: 1em;
+            font-size: 1.1em;
             transition: all 0.3s;
-            margin-top: 15px;
             width: 100%;
             font-weight: bold;
         }
 
         .copy-btn:hover {
-            transform: scale(1.02);
-            box-shadow: 0 5px 15px rgba(42, 82, 152, 0.4);
+            transform: scale(1.03);
+            box-shadow: 0 8px 20px rgba(42, 82, 152, 0.4);
         }
 
         .copy-btn:active {
-            transform: scale(0.98);
+            transform: scale(0.97);
         }
 
         .copy-feedback {
             color: #27ae60;
-            font-size: 0.9em;
-            margin-top: 10px;
+            font-size: 1.1em;
+            margin-top: 15px;
             display: none;
             text-align: center;
+            font-weight: bold;
         }
 
         .copy-feedback.show {
             display: block;
         }
 
-        footer {
-            text-align: center;
-            color: #666;
-            margin-top: 50px;
-            padding: 20px;
-            font-size: 0.9em;
-        }
-
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 2em;
+            h1 {
+                font-size: 1.8em;
             }
 
-            .code-section {
-                padding: 20px;
+            .container {
+                padding: 30px;
             }
 
-            .products {
-                grid-template-columns: 1fr;
+            .code-container code {
+                font-size: 0.9em;
             }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>🎓 LOLYFORSCHOOL</h1>
-        <p>متجر الأدوات المدرسية الأول</p>
-    </header>
-
     <div class="container">
-        <div class="products">
-            <div class="product-card">
-                <div class="icon">📚</div>
-                <h3>الكتب والدفاتر</h3>
-                <p>أفضل الكتب والدفاتر للدراسة والتحضير</p>
-            </div>
-
-            <div class="product-card">
-                <div class="icon">✏️</div>
-                <h3>الأقلام والأدوات</h3>
-                <p>أقلام عالية الجودة وأدوات رسم احترافية</p>
-            </div>
-
-            <div class="product-card">
-                <div class="icon">🎨</div>
-                <h3>الألوان والرسم</h3>
-                <p>ألوان زاهية وأدوات الفنون الجميلة</p>
-            </div>
-
-            <div class="product-card">
-                <div class="icon">📐</div>
-                <h3>أدوات الرياضيات</h3>
-                <p>مسطرات وفرجار وأدوات هندسية متقدمة</p>
-            </div>
-
-            <div class="product-card">
-                <div class="icon">🎒</div>
-                <h3>الحقائب المدرسية</h3>
-                <p>حقائب مريحة وعملية للطلاب</p>
-            </div>
-
-            <div class="product-card">
-                <div class="icon">💼</div>
-                <h3>منتجات أخرى</h3>
-                <p>كل ما تحتاجه للمدرسة في مكان واحد</p>
-            </div>
-        </div>
-
-        <div class="code-section">
-            <h2>📋 الكود جاهز للنسخ</h2>
-            <div class="code-container">
-                <code id="codeContent">&lt;!DOCTYPE html&gt;
+        <h1>📋 الكود جاهز للنسخ</h1>
+        
+        <div class="code-container">
+            <code id="codeContent">&lt;!DOCTYPE html&gt;
 &lt;html dir="rtl" lang="ar"&gt;
     &lt;head&gt;
         &lt;title&gt; 1-2&lt;/title&gt;
@@ -233,15 +121,11 @@
         &lt;mark&gt;&lt;/mark&gt;
     &lt;/body&gt;
 &lt;/html&gt;</code>
-            </div>
-            <button class="copy-btn" onclick="copyCode()">📋 نسخ الكود</button>
-            <div class="copy-feedback" id="copyFeedback">✅ تم النسخ بنجاح!</div>
         </div>
+        
+        <button class="copy-btn" onclick="copyCode()">📋 نسخ الكود</button>
+        <div class="copy-feedback" id="copyFeedback">✅ تم النسخ بنجاح!</div>
     </div>
-
-    <footer>
-        <p>&copy; 2025 LOLYFORSCHOOL - جميع الحقوق محفوظة</p>
-    </footer>
 
     <script>
         function copyCode() {
